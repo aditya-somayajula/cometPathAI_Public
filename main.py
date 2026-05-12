@@ -3,7 +3,7 @@ import tempfile
 import streamlit as st
 from datetime import datetime
 from utils import write_message, get_resume, get_session_id
-from agent2 import generate_response
+from agent import generate_response
 
 
 # -----------------------------
