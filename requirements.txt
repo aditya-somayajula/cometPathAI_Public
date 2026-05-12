@@ -47,6 +47,7 @@ jsonpointer==3.1.1
 jsonschema==4.26.0
 jsonschema-specifications==2025.9.1
 kubernetes==35.0.0
+langchain==1.2.17
 langchain-chroma==1.1.0
 langchain-classic==1.0.4
 langchain-community==0.4.1
@@ -127,7 +128,7 @@ threadpoolctl==3.6.0
 tokenizers==0.22.2
 toml==0.10.2
 torch==2.11.0
-torchvision
+torchvision==0.26.0
 tornado==6.5.5
 tqdm==4.67.3
 transformers==5.7.0
