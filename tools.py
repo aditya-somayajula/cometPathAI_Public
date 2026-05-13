@@ -1,9 +1,12 @@
-from llm import llm
+# Importing Libraries
+import json
+import streamlit as st
+from llm import get_llm
 from langchain.tools import tool
 from prompts import CYPHER_GENERATION_TEMPLATE
 from langchain_neo4j import GraphCypherQAChain
 from langchain_core.prompts import PromptTemplate
-from graph_and_vector import graph_main, vector_store
+from graph_and_vector import get_graph_main, get_vector_main
 
 
 # -----------------------------
@@ -15,35 +18,20 @@ def vector_search(query: str):
     Use this to find Schools, Programs, or Courses based on semantic similarity to
     skills or interests or resume or goal.
     """
-    docs = vector_store.similarity_search(query, k=20)
+    docs = get_vector_main().similarity_search(query, k=10)
     # return "\n -- \n".join([f"Content: {d.page_content}\nMetadata: {d.metadata}" for d in docs])
-    return [
-        {
-            "content": d.page_content,
-            "metadata": d.metadata
-        }
-        for d in docs
-    ]
+    return json.dumps([
+    {
+        "content": d.page_content,
+        "metadata": d.metadata
+    }
+    for d in docs
+])
 
 
 # -----------------------------
 # Graph Store Tool
 # -----------------------------
-cypher_prompt = PromptTemplate.from_template(
-    CYPHER_GENERATION_TEMPLATE
-)
-
-cypher_qa = GraphCypherQAChain.from_llm(
-    llm,
-    graph=graph_main,
-    verbose=False,
-    cypher_prompt=cypher_prompt,
-    top_k=20,
-    validate_cypher=True,
-    allow_dangerous_requests=True,
-    return_direct=False
-)
-
 @tool
 def graph_search(question: str):
     """
@@ -73,10 +61,26 @@ def graph_search(question: str):
         Do not provide raw Cypher queries as input.
         Input should always be a natural language question.
     """
+    graph = get_graph_main()
+    llm_model = get_llm(st.session_state.model_name, st.session_state["MODEL_API_KEY"])
+
+    cypher_prompt = PromptTemplate.from_template(CYPHER_GENERATION_TEMPLATE)
+
+    cypher_qa = GraphCypherQAChain.from_llm(
+        llm_model,
+        graph=graph,
+        verbose=False,
+        cypher_prompt=cypher_prompt,
+        top_k=10,
+        validate_cypher=True,
+        allow_dangerous_requests=True,
+        return_direct=False
+    )
+
     response = cypher_qa.invoke({
         "query": question
     })
     result = response.get("result", "")
-    if not result or "don't know" in result.lower():
-        return "No relevant graph data found."
+    if not result:
+        return "No graph results found."
     return result
