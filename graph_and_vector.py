@@ -1,30 +1,47 @@
 # Importing Libraries
-import os
+import streamlit as st
 from llm import embeddings
-from dotenv import load_dotenv
 from langchain_neo4j import Neo4jGraph
 from langchain_chroma import Chroma
-
-load_dotenv()
 
 
 # -----------------------------
 # Graph Store Setup
 # -----------------------------
-graph_main = Neo4jGraph(
-    url = os.getenv("MAIN_NEO4J_URI"),
-    username = os.getenv("MAIN_NEO4J_USERNAME"),
-    password = os.getenv("MAIN_NEO4J_PASSWORD"),
-    database = os.getenv("MAIN_NEO4J_DATABASE")
-)
+@st.cache_resource
+def get_graph_store(uri, username, password, database):
+    return Neo4jGraph(
+        url=uri,
+        username=username,
+        password=password,
+        database=database
+    )
+
+def get_graph_main():
+    return get_graph_store(
+        st.session_state["MAIN_NEO4J_URI"],
+        st.session_state["MAIN_NEO4J_USERNAME"],
+        st.session_state["MAIN_NEO4J_PASSWORD"],
+        st.session_state["MAIN_NEO4J_DATABASE"]
+    )
 
 # -----------------------------
 # Vector Store Setup
 # -----------------------------
-vector_store = Chroma(
-    collection_name="entities",
-    embedding_function=embeddings,
-    chroma_cloud_api_key=os.getenv("CHROMA_API_KEY"),
-    tenant=os.getenv("CHROMA_TENANT"),
-    database=os.getenv("CHROMA_DB"),
-)
+@st.cache_resource
+def get_vector_store(collection_name, api_key, tenant, db):
+    return Chroma(
+        collection_name=collection_name,
+        embedding_function=embeddings,
+        chroma_cloud_api_key=api_key,
+        tenant=tenant,
+        database=db
+    )
+
+def get_vector_main():
+    return get_vector_store(
+        st.session_state["COLLECTION_NAME"],
+        st.session_state["CHROMA_API_KEY"],
+        st.session_state["CHROMA_TENANT"],
+        st.session_state["CHROMA_DB"]
+    )
