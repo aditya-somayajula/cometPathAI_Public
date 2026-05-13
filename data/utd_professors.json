@@ -1,0 +1,1851 @@
+[
+  {
+    "id": "natarajan",
+    "name": "Sriraam Natarajan",
+    "title": "Professor, Director of Center for Machine Learning",
+    "dept": "CS",
+    "school": "ECS",
+    "email": "Sriraam.Natarajan@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/sriraam.natarajan",
+    "rmp_url": "https://www.ratemyprofessors.com/professor/2331194",
+    "research_areas": [
+      "AI",
+      "Data Science"
+    ],
+    "teaches": [
+      "CS6375",
+      "CS6364",
+      "CS6347"
+    ],
+    "bio": "AAAI Fellow. Research in statistical relational AI, machine learning for healthcare, and human-allied AI systems. Director of the UTD Machine Learning Center."
+  },
+  {
+    "id": "gogate",
+    "name": "Vibhav Gogate",
+    "title": "Professor",
+    "dept": "CS",
+    "school": "ECS",
+    "email": "vibhav.gogate@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/vibhav.gogate",
+    "rmp_url": null,
+    "research_areas": [
+      "AI",
+      "Data Science"
+    ],
+    "teaches": [
+      "CS6375",
+      "CS6347"
+    ],
+    "bio": "Research in probabilistic reasoning, graphical models, and lifted inference. Known for scalable algorithms for probabilistic inference in large Bayesian and Markov networks."
+  },
+  {
+    "id": "iyer",
+    "name": "Rishabh Iyer",
+    "title": "Assistant Professor",
+    "dept": "CS",
+    "school": "ECS",
+    "email": "Rishabh.Iyer@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/rishabh.iyer",
+    "rmp_url": null,
+    "research_areas": [
+      "AI",
+      "Data Science"
+    ],
+    "teaches": [
+      "CS6375",
+      "CS6364"
+    ],
+    "bio": "Research in submodular optimization, machine learning, data selection, and subset selection for efficient training of large models."
+  },
+  {
+    "id": "nagar",
+    "name": "Anurag Nagar",
+    "title": "Associate Professor of Instruction",
+    "dept": "CS",
+    "school": "ECS",
+    "email": "Anurag.Nagar@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/anurag.nagar",
+    "rmp_url": "https://www.ratemyprofessors.com/professor/2038564",
+    "research_areas": [
+      "AI",
+      "Data Science"
+    ],
+    "teaches": [
+      "CS6375",
+      "CS6313"
+    ],
+    "bio": "Teaching-focused faculty. Courses in machine learning and statistical methods. Known for thorough coverage of regression, decision trees, and neural networks."
+  },
+  {
+    "id": "ruozzi",
+    "name": "Nicholas Ruozzi",
+    "title": "Associate Professor",
+    "dept": "CS",
+    "school": "ECS",
+    "email": "nicholas.ruozzi@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/nicholas.ruozzi",
+    "rmp_url": null,
+    "research_areas": [
+      "AI"
+    ],
+    "teaches": [
+      "CS6375",
+      "CS6347"
+    ],
+    "bio": "Research in probabilistic graphical models, approximate inference, and message-passing algorithms."
+  },
+  {
+    "id": "schweitzer",
+    "name": "Haim Schweitzer",
+    "title": "Professor",
+    "dept": "CS",
+    "school": "ECS",
+    "email": "HSchweitzer@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/hschweitzer",
+    "rmp_url": null,
+    "research_areas": [
+      "AI",
+      "Data Science"
+    ],
+    "teaches": [
+      "CS6344",
+      "CS6364"
+    ],
+    "bio": "Research in dimensionality reduction, matrix approximation, and data representations. Known for contributions to PCA, SVD, and feature selection algorithms."
+  },
+  {
+    "id": "harabagiu",
+    "name": "Sanda Harabagiu",
+    "title": "Professor, Research Initiation Chair",
+    "dept": "CS",
+    "school": "ECS",
+    "email": "sanda@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/sanda",
+    "rmp_url": "https://www.ratemyprofessors.com/professor/609200",
+    "research_areas": [
+      "NLP",
+      "AI"
+    ],
+    "teaches": [
+      "CS6320",
+      "CS6322",
+      "CS6364"
+    ],
+    "bio": "Pioneer in question answering, information extraction, and biomedical NLP. Led development of early QA systems for TREC competitions. Research in clinical NLP and semantic understanding."
+  },
+  {
+    "id": "ng_vincent",
+    "name": "Vincent Ng",
+    "title": "Professor",
+    "dept": "CS",
+    "school": "ECS",
+    "email": "vince@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/vince",
+    "rmp_url": null,
+    "research_areas": [
+      "NLP"
+    ],
+    "teaches": [
+      "CS6320",
+      "CS6321",
+      "CS6322"
+    ],
+    "bio": "Research in coreference resolution, discourse processing, opinion mining, and natural language understanding. NSF CAREER award recipient."
+  },
+  {
+    "id": "ouyang",
+    "name": "Jessica Ouyang",
+    "title": "Assistant Professor",
+    "dept": "CS",
+    "school": "ECS",
+    "email": "jessica.ouyang@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/jessica.ouyang",
+    "rmp_url": null,
+    "research_areas": [
+      "NLP"
+    ],
+    "teaches": [
+      "CS6320",
+      "CS6321"
+    ],
+    "bio": "Research in narrative understanding, summarization, and text generation. Focuses on computational approaches to story understanding and creative language generation."
+  },
+  {
+    "id": "xinya_du",
+    "name": "Xinya Du",
+    "title": "Assistant Professor",
+    "dept": "CS",
+    "school": "ECS",
+    "email": "xinya.du@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/xinya.du",
+    "rmp_url": null,
+    "research_areas": [
+      "NLP",
+      "AI"
+    ],
+    "teaches": [
+      "CS6320",
+      "CS6322"
+    ],
+    "bio": "Research in information extraction, question generation, event understanding, and large language models. Strong focus on structured NLP tasks."
+  },
+  {
+    "id": "hamlen",
+    "name": "Kevin Hamlen",
+    "title": "Professor, Louis A. Beecherl Jr. Distinguished Professor",
+    "dept": "CS",
+    "school": "ECS",
+    "email": "hamlen@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/hamlen",
+    "rmp_url": null,
+    "research_areas": [
+      "Security"
+    ],
+    "teaches": [
+      "CS6324",
+      "CS6332",
+      "CS6335"
+    ],
+    "bio": "Director of the UTD Cyber Security Research and Education Institute. Research in language-based security, binary analysis, malware defense, and software security enforcement."
+  },
+  {
+    "id": "thuraisingham",
+    "name": "Bhavani Thuraisingham",
+    "title": "Louis A. Beecherl Jr. Distinguished Professor, Founders Chair",
+    "dept": "CS",
+    "school": "ECS",
+    "email": "bhavani.thuraisingham@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/bhavani.thuraisingham",
+    "rmp_url": null,
+    "research_areas": [
+      "Security",
+      "Data Management",
+      "AI"
+    ],
+    "teaches": [
+      "CS6324",
+      "CS6348"
+    ],
+    "bio": "ACM and IEEE Fellow, NAI Fellow. Pioneering work in data and application security, secure data mining, and cyber security for cloud and IoT systems."
+  },
+  {
+    "id": "kantarcioglu",
+    "name": "Murat Kantarcioglu",
+    "title": "Professor",
+    "dept": "CS",
+    "school": "ECS",
+    "email": "mxk055100@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/mxk055100",
+    "rmp_url": null,
+    "research_areas": [
+      "Security",
+      "Data Management"
+    ],
+    "teaches": [
+      "CS6348",
+      "CS6377"
+    ],
+    "bio": "IEEE Fellow. Research in privacy-preserving data mining, cryptographic protocols for database security, and blockchain-based data integrity."
+  },
+  {
+    "id": "desmedt",
+    "name": "Yvo Desmedt",
+    "title": "Jonsson Distinguished Professor",
+    "dept": "CS",
+    "school": "ECS",
+    "email": "ygd120030@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/yvo.desmedt",
+    "rmp_url": null,
+    "research_areas": [
+      "Security"
+    ],
+    "teaches": [
+      "CS6377",
+      "CS6349"
+    ],
+    "bio": "Internationally recognized cryptographer. Research in public-key cryptography, secret sharing, and threshold cryptosystems."
+  },
+  {
+    "id": "jee",
+    "name": "Kangkook Jee",
+    "title": "Assistant Professor",
+    "dept": "CS",
+    "school": "ECS",
+    "email": "kangkook.jee@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/kangkook.jee",
+    "rmp_url": null,
+    "research_areas": [
+      "Security",
+      "Systems"
+    ],
+    "teaches": [
+      "CS6332",
+      "CS6324"
+    ],
+    "bio": "Research in systems security, binary analysis, provenance tracking, and threat detection for enterprise systems."
+  },
+  {
+    "id": "hao_shuang",
+    "name": "Shuang Hao",
+    "title": "Associate Professor",
+    "dept": "CS",
+    "school": "ECS",
+    "email": "shao@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/shao",
+    "rmp_url": null,
+    "research_areas": [
+      "Security",
+      "Networks"
+    ],
+    "teaches": [
+      "CS6349",
+      "CS6324"
+    ],
+    "bio": "Research in network security, web security, malware analysis, and measuring cybercrime infrastructure."
+  },
+  {
+    "id": "mittal",
+    "name": "Neeraj Mittal",
+    "title": "Professor, Associate CS Department Head",
+    "dept": "CS",
+    "school": "ECS",
+    "email": "neerajm@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/neerajm",
+    "rmp_url": "https://www.ratemyprofessors.com/professor/182843",
+    "research_areas": [
+      "Systems"
+    ],
+    "teaches": [
+      "CS6378",
+      "CS6380"
+    ],
+    "bio": "Research in distributed computing, concurrent algorithms, fault tolerance, and program verification for distributed systems."
+  },
+  {
+    "id": "prakash",
+    "name": "Ravi Prakash",
+    "title": "Professor",
+    "dept": "CS",
+    "school": "ECS",
+    "email": "Ravi.Prakash@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/ravi.prakash",
+    "rmp_url": null,
+    "research_areas": [
+      "Systems",
+      "Networks"
+    ],
+    "teaches": [
+      "CS6380",
+      "CS6378"
+    ],
+    "bio": "Research in distributed systems, peer-to-peer networks, and fault-tolerant computing."
+  },
+  {
+    "id": "sarac",
+    "name": "Kamil Sarac",
+    "title": "Professor, Associate Head for Faculty Affairs",
+    "dept": "CS",
+    "school": "ECS",
+    "email": "ksarac@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/ksarac",
+    "rmp_url": null,
+    "research_areas": [
+      "Networks",
+      "Systems"
+    ],
+    "teaches": [
+      "CS5390",
+      "CS6340",
+      "CS6368"
+    ],
+    "bio": "Research in computer networking, network measurement, and Internet topology. Expert in multicast protocols and network management."
+  },
+  {
+    "id": "jue",
+    "name": "Jason Jue",
+    "title": "Professor",
+    "dept": "CS",
+    "school": "ECS",
+    "email": "Jason.Jue@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/jason.jue",
+    "rmp_url": null,
+    "research_areas": [
+      "Networks"
+    ],
+    "teaches": [
+      "CS5390",
+      "CS6340"
+    ],
+    "bio": "Research in optical networks, cloud computing networking, and resource allocation in wireless and wired networks."
+  },
+  {
+    "id": "daescu",
+    "name": "Ovidiu Daescu",
+    "title": "Professor, CS Department Head",
+    "dept": "CS",
+    "school": "ECS",
+    "email": "ovidiu.daescu@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/ovidiu.daescu",
+    "rmp_url": null,
+    "research_areas": [
+      "Theory"
+    ],
+    "teaches": [
+      "CS6363",
+      "CS6319"
+    ],
+    "bio": "Research in computational geometry, algorithm design and analysis, and geometric optimization. Numerous papers in SODA, SoCG, and related venues."
+  },
+  {
+    "id": "du_dingzhu",
+    "name": "Ding-Zhu Du",
+    "title": "Professor",
+    "dept": "CS",
+    "school": "ECS",
+    "email": "dzdu@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/dzdu",
+    "rmp_url": null,
+    "research_areas": [
+      "Theory"
+    ],
+    "teaches": [
+      "CS6363",
+      "CS6381"
+    ],
+    "bio": "World-renowned combinatorics researcher. Work on Steiner trees, dominating sets, and combinatorial optimization problems in networks."
+  },
+  {
+    "id": "raichel",
+    "name": "Benjamin Raichel",
+    "title": "Associate Professor",
+    "dept": "CS",
+    "school": "ECS",
+    "email": "benjamin.raichel@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/benjamin.raichel",
+    "rmp_url": null,
+    "research_areas": [
+      "Theory"
+    ],
+    "teaches": [
+      "CS6363",
+      "CS6319",
+      "CS6381"
+    ],
+    "bio": "Research in computational geometry, metric embeddings, and algorithm design. NSF CAREER award recipient."
+  },
+  {
+    "id": "gupta_gopal",
+    "name": "Gopal Gupta",
+    "title": "Professor",
+    "dept": "CS",
+    "school": "ECS",
+    "email": "Gopal.Gupta@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/gopal.gupta",
+    "rmp_url": "https://www.ratemyprofessors.com/professor/737765",
+    "research_areas": [
+      "Theory",
+      "AI"
+    ],
+    "teaches": [
+      "CS6382",
+      "CS6371",
+      "CS6374"
+    ],
+    "bio": "Research in logic programming, answer set programming, constraint solving, and programming language theory."
+  },
+  {
+    "id": "huynh",
+    "name": "Dung T. Huynh",
+    "title": "Professor",
+    "dept": "CS",
+    "school": "ECS",
+    "email": "huynh@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/huynh",
+    "rmp_url": null,
+    "research_areas": [
+      "Theory"
+    ],
+    "teaches": [
+      "CS6382",
+      "CS5349"
+    ],
+    "bio": "Research in formal language theory, automata, and computational complexity."
+  },
+  {
+    "id": "prabhakaran",
+    "name": "Balakrishnan Prabhakaran",
+    "title": "Professor",
+    "dept": "CS",
+    "school": "ECS",
+    "email": "praba@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/praba",
+    "rmp_url": null,
+    "research_areas": [
+      "Vision"
+    ],
+    "teaches": [
+      "CS6331",
+      "CS6327",
+      "CS6334"
+    ],
+    "bio": "Editor-in-Chief of IEEE Multimedia. Research in multimedia systems, 3D medical imaging, video analytics, and immersive tele-rehabilitation."
+  },
+  {
+    "id": "guo_xiaohu",
+    "name": "Xiaohu Guo",
+    "title": "Professor",
+    "dept": "CS",
+    "school": "ECS",
+    "email": "xguo@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/xguo",
+    "rmp_url": null,
+    "research_areas": [
+      "Vision"
+    ],
+    "teaches": [
+      "CS6366",
+      "CS6323"
+    ],
+    "bio": "Research in computer graphics, geometric modeling, mesh processing, and physically-based simulation."
+  },
+  {
+    "id": "xiang_yu",
+    "name": "Yu Xiang",
+    "title": "Assistant Professor",
+    "dept": "CS",
+    "school": "ECS",
+    "email": "yu.xiang@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/yu.xiang",
+    "rmp_url": null,
+    "research_areas": [
+      "Vision",
+      "AI"
+    ],
+    "teaches": [
+      "CS6384",
+      "CS6341"
+    ],
+    "bio": "Director of the Intelligent Robotics and Vision Lab (IRVL). Research in 6D object pose estimation, robot manipulation, and embodied AI."
+  },
+  {
+    "id": "tian_yapeng",
+    "name": "Yapeng Tian",
+    "title": "Assistant Professor",
+    "dept": "CS",
+    "school": "ECS",
+    "email": "yapeng.tian@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/yapeng.tian",
+    "rmp_url": null,
+    "research_areas": [
+      "Vision",
+      "AI"
+    ],
+    "teaches": [
+      "CS6327",
+      "CS6384"
+    ],
+    "bio": "Research in multimodal learning, audio-visual understanding, and video analysis with deep learning."
+  },
+  {
+    "id": "kim_jin",
+    "name": "Jin Ryong Kim",
+    "title": "Assistant Professor",
+    "dept": "CS",
+    "school": "ECS",
+    "email": "Jin.Kim@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/jin.kim",
+    "rmp_url": null,
+    "research_areas": [
+      "Vision"
+    ],
+    "teaches": [
+      "CS6334",
+      "CS6326"
+    ],
+    "bio": "Director of the Multimodal Interaction Lab (MI Lab). Research in haptic technology, thermal interfaces, and immersive virtual reality."
+  },
+  {
+    "id": "khan_latifur",
+    "name": "Latifur Khan",
+    "title": "Professor",
+    "dept": "CS",
+    "school": "ECS",
+    "email": "Latifur.Khan@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/latifur.khan",
+    "rmp_url": null,
+    "research_areas": [
+      "Data Management",
+      "AI",
+      "Security"
+    ],
+    "teaches": [
+      "CS6350",
+      "CS6360"
+    ],
+    "bio": "IEEE Fellow. Research in big data analytics, data stream mining, social network analysis, and cyber security with machine learning."
+  },
+  {
+    "id": "chen_feng",
+    "name": "Feng Chen",
+    "title": "Associate Professor",
+    "dept": "CS",
+    "school": "ECS",
+    "email": "feng.chen@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/feng.chen",
+    "rmp_url": null,
+    "research_areas": [
+      "Data Management",
+      "AI"
+    ],
+    "teaches": [
+      "CS6360",
+      "CS6350"
+    ],
+    "bio": "Research in event detection, anomaly detection, and mining spatio-temporal data and social networks."
+  },
+  {
+    "id": "nguyen_tien",
+    "name": "Tien Nguyen",
+    "title": "Professor",
+    "dept": "CS",
+    "school": "ECS",
+    "email": "tien.n.nguyen@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/tien.n.nguyen",
+    "rmp_url": null,
+    "research_areas": [
+      "Software Engineering",
+      "AI"
+    ],
+    "teaches": [
+      "CS6359",
+      "CS6312"
+    ],
+    "bio": "Research in software engineering, program analysis, AI-assisted code generation, and automated software repair."
+  },
+  {
+    "id": "wei_shiyi",
+    "name": "Shiyi Wei",
+    "title": "Associate Professor, Director of Software Engineering Programs",
+    "dept": "CS",
+    "school": "ECS",
+    "email": "swei@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/swei",
+    "rmp_url": null,
+    "research_areas": [
+      "Software Engineering",
+      "Security"
+    ],
+    "teaches": [
+      "CS6335",
+      "CS6359"
+    ],
+    "bio": "Research in software security, program analysis, and language-based defenses against memory errors and code injection."
+  },
+  {
+    "id": "wong_eric",
+    "name": "W. Eric Wong",
+    "title": "Professor, Director of International Outreach",
+    "dept": "CS",
+    "school": "ECS",
+    "email": "ewong@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/ewong",
+    "rmp_url": null,
+    "research_areas": [
+      "Software Engineering"
+    ],
+    "teaches": [
+      "CS6312",
+      "CS6363"
+    ],
+    "bio": "Research in software testing, debugging, fault localization, and software reliability."
+  },
+  {
+    "id": "jacob_varghese",
+    "name": "Varghese S. Jacob",
+    "title": "Professor",
+    "dept": "MIS",
+    "school": "JSOM",
+    "email": "vjacob@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/vjacob",
+    "rmp_url": null,
+    "research_areas": [
+      "IT Management",
+      "Business Intelligence"
+    ],
+    "teaches": [
+      "MIS6313",
+      "MIS6302",
+      "MIS6308"
+    ],
+    "bio": "Research in IT management, decision support systems, and the strategic value of information systems in organizations."
+  },
+  {
+    "id": "kumar_nanda",
+    "name": "Nanda Kumar",
+    "title": "Professor",
+    "dept": "MIS",
+    "school": "JSOM",
+    "email": "nkumar@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/nkumar",
+    "rmp_url": null,
+    "research_areas": [
+      "IT Management",
+      "Digital Strategy"
+    ],
+    "teaches": [
+      "MIS6302",
+      "MIS6360",
+      "MIS6393"
+    ],
+    "bio": "Research in digital strategy, IT governance, enterprise systems, and managing IT in organizations."
+  },
+  {
+    "id": "haynes_steven",
+    "name": "Steven Haynes",
+    "title": "Associate Professor",
+    "dept": "MIS",
+    "school": "JSOM",
+    "email": "Steven.Haynes@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/shaynes",
+    "rmp_url": null,
+    "research_areas": [
+      "IT Management",
+      "Enterprise Systems"
+    ],
+    "teaches": [
+      "MIS6319",
+      "MIS6332",
+      "MIS6369"
+    ],
+    "bio": "Research in enterprise systems, SAP implementation, and ERP adoption. Expert in SAP S/4 HANA platform."
+  },
+  {
+    "id": "hefley_william",
+    "name": "William Hefley",
+    "title": "Professor",
+    "dept": "MIS",
+    "school": "JSOM",
+    "email": "William.Hefley@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/whefley",
+    "rmp_url": null,
+    "research_areas": [
+      "IT Management",
+      "Digital Strategy"
+    ],
+    "teaches": [
+      "MIS6349",
+      "MIS6360",
+      "MIS6313"
+    ],
+    "bio": "Research in IT consulting, service management, ITIL, and agile project management."
+  },
+  {
+    "id": "henderson_tom",
+    "name": "Tom Henderson",
+    "title": "Professor of Instruction",
+    "dept": "MIS",
+    "school": "JSOM",
+    "email": "Tom.Henderson@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/thenderson",
+    "rmp_url": null,
+    "research_areas": [
+      "Cybersecurity Management"
+    ],
+    "teaches": [
+      "MIS6330",
+      "MIS6333",
+      "MIS6384"
+    ],
+    "bio": "Cybersecurity practitioner and educator. Expertise in network security, digital forensics, and cyber risk management."
+  },
+  {
+    "id": "hicks_jeffrey",
+    "name": "Jeffrey Hicks",
+    "title": "Professor of Instruction",
+    "dept": "MIS",
+    "school": "JSOM",
+    "email": "Jeffrey.Hicks@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/jhicks",
+    "rmp_url": null,
+    "research_areas": [
+      "Cloud & Infrastructure",
+      "IT Management"
+    ],
+    "teaches": [
+      "MIS6363",
+      "MIS6347",
+      "MIS6389"
+    ],
+    "bio": "Expertise in cloud computing, AWS architecture, and enterprise IT infrastructure. AWS certified instructor."
+  },
+  {
+    "id": "janakiraman_surya",
+    "name": "Surya N. Janakiraman",
+    "title": "Associate Professor",
+    "dept": "MIS",
+    "school": "JSOM",
+    "email": "Surya.Janakiraman@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/sjanakiraman",
+    "rmp_url": null,
+    "research_areas": [
+      "Business Intelligence",
+      "IT Management"
+    ],
+    "teaches": [
+      "MIS6309",
+      "MIS6345",
+      "MIS6380"
+    ],
+    "bio": "Research in business intelligence, data warehousing, and analytics platforms. Expert in SAP analytics suite."
+  },
+  {
+    "id": "jayaraman_v",
+    "name": "Vaidyanathan Jayaraman",
+    "title": "Professor",
+    "dept": "MIS",
+    "school": "JSOM",
+    "email": "Vaidyanathan.Jayaraman@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/vjayaraman",
+    "rmp_url": null,
+    "research_areas": [
+      "Enterprise Systems",
+      "Digital Strategy"
+    ],
+    "teaches": [
+      "MIS6319",
+      "MIS6369",
+      "MIS6375"
+    ],
+    "bio": "Research in supply chain management, enterprise systems, and digital supply chains. Expert in SAP-based supply chain solutions."
+  },
+  {
+    "id": "jain_sanjay",
+    "name": "Sanjay Jain",
+    "title": "Professor",
+    "dept": "MIS",
+    "school": "JSOM",
+    "email": "Sanjay.Jain@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/sjain",
+    "rmp_url": null,
+    "research_areas": [
+      "Business Intelligence",
+      "IT Management"
+    ],
+    "teaches": [
+      "MIS6326",
+      "MIS6308",
+      "MIS6316"
+    ],
+    "bio": "Research in data management, information systems design, and database technologies for business."
+  },
+  {
+    "id": "biswas_abhijit",
+    "name": "Abhijit Biswas",
+    "title": "Professor",
+    "dept": "MIS",
+    "school": "JSOM",
+    "email": "abhijit.biswas@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/abiswas",
+    "rmp_url": null,
+    "research_areas": [
+      "Business Intelligence",
+      "Digital Strategy"
+    ],
+    "teaches": [
+      "MIS6341",
+      "MIS6356",
+      "MIS6386"
+    ],
+    "bio": "Research in business analytics, customer analytics, and machine learning applications for marketing and CRM."
+  },
+  {
+    "id": "cavusoglu_huseyin",
+    "name": "Huseyin Cavusoglu",
+    "title": "Professor",
+    "dept": "MIS",
+    "school": "JSOM",
+    "email": "huseyin@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/huseyin",
+    "rmp_url": null,
+    "research_areas": [
+      "Cybersecurity Management",
+      "IT Management"
+    ],
+    "teaches": [
+      "MIS6330",
+      "MIS6368"
+    ],
+    "bio": "Research in cyber security economics, IT risk management, and the economics of information security."
+  },
+  {
+    "id": "janakiraman_ganesh",
+    "name": "Ganesh Janakiraman",
+    "title": "Professor",
+    "dept": "MIS",
+    "school": "JSOM",
+    "email": "Ganesh.Janakiraman@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/gjanakiraman",
+    "rmp_url": null,
+    "research_areas": [
+      "Business Analytics",
+      "IT Management"
+    ],
+    "teaches": [
+      "BUAN6335",
+      "BUAN6324",
+      "BUAN6337"
+    ],
+    "bio": "Research in business analytics, data-driven decision making, and the application of AI in operations and management."
+  },
+  {
+    "id": "ali_ashiq",
+    "name": "Ashiq Ali",
+    "title": "Professor, Caruth Chair",
+    "dept": "FIN",
+    "school": "JSOM",
+    "email": "ashiq.ali@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/ashiq.ali",
+    "rmp_url": null,
+    "research_areas": [
+      "Finance",
+      "Quantitative Finance"
+    ],
+    "teaches": [
+      "FIN6301",
+      "FIN6350"
+    ],
+    "bio": "Research in financial accounting, earnings quality, and the role of accounting information in financial markets."
+  },
+  {
+    "id": "gurun_umit",
+    "name": "Umit G. Gurun",
+    "title": "Professor",
+    "dept": "FIN",
+    "school": "JSOM",
+    "email": "Umit.Gurun@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/ugg041000",
+    "rmp_url": null,
+    "research_areas": [
+      "Finance",
+      "Corporate Finance"
+    ],
+    "teaches": [
+      "FIN6301",
+      "FIN6350",
+      "FIN6356"
+    ],
+    "bio": "Research in empirical corporate finance, advertising, media, and financial markets. Studies the interplay between media coverage and financial decisions."
+  },
+  {
+    "id": "dai_zhonglan",
+    "name": "Zhonglan Dai",
+    "title": "Associate Professor",
+    "dept": "FIN",
+    "school": "JSOM",
+    "email": "Zhonglan.Dai@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/zdai",
+    "rmp_url": null,
+    "research_areas": [
+      "Corporate Finance",
+      "Finance"
+    ],
+    "teaches": [
+      "FIN6350",
+      "FIN6315",
+      "FIN6316"
+    ],
+    "bio": "Research in corporate finance, investment, and FinTech. Studies capital structure, M&A, and venture capital."
+  },
+  {
+    "id": "harrison_richard",
+    "name": "Richard Harrison",
+    "title": "Associate Professor",
+    "dept": "FIN",
+    "school": "JSOM",
+    "email": "Richard.Harrison@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/rharrison",
+    "rmp_url": null,
+    "research_areas": [
+      "Quantitative Finance",
+      "Finance"
+    ],
+    "teaches": [
+      "FIN6307",
+      "FIN6318",
+      "FIN6360"
+    ],
+    "bio": "Research in asset pricing, derivatives, and financial econometrics. Teaches mathematical and quantitative methods in finance."
+  },
+  {
+    "id": "guttery_randall",
+    "name": "Randall Guttery",
+    "title": "Associate Professor",
+    "dept": "FIN",
+    "school": "JSOM",
+    "email": "Randall.Guttery@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/rguttery",
+    "rmp_url": null,
+    "research_areas": [
+      "Finance"
+    ],
+    "teaches": [
+      "FIN6321",
+      "FIN6322",
+      "FIN6325"
+    ],
+    "bio": "Research in real estate finance, mortgage markets, and macroeconomic factors affecting financial markets."
+  },
+  {
+    "id": "cready_william",
+    "name": "William M. Cready",
+    "title": "Professor",
+    "dept": "FIN",
+    "school": "JSOM",
+    "email": "wmc041000@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/wmc041000",
+    "rmp_url": null,
+    "research_areas": [
+      "Finance",
+      "Quantitative Finance"
+    ],
+    "teaches": [
+      "FIN6308",
+      "FIN6368"
+    ],
+    "bio": "Research in financial markets regulation, information asymmetry, and the role of financial reporting in investment decisions."
+  },
+  {
+    "id": "li_ningzhong",
+    "name": "Ningzhong Li",
+    "title": "Professor",
+    "dept": "FIN",
+    "school": "JSOM",
+    "email": "Ningzhong.Li@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/nxl124130",
+    "rmp_url": null,
+    "research_areas": [
+      "Finance",
+      "Quantitative Finance"
+    ],
+    "teaches": [
+      "FIN6310",
+      "FIN6364",
+      "FIN6380"
+    ],
+    "bio": "Research in investments, portfolio theory, and empirical asset pricing. Known for research on hedge funds and active portfolio management."
+  },
+  {
+    "id": "bensoussan_alain",
+    "name": "Alain Bensoussan",
+    "title": "Professor",
+    "dept": "FIN",
+    "school": "JSOM",
+    "email": "Alain.Bensoussan@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/axb046100",
+    "rmp_url": null,
+    "research_areas": [
+      "Quantitative Finance"
+    ],
+    "teaches": [
+      "FIN6307",
+      "FIN6360",
+      "FIN6362"
+    ],
+    "bio": "World-renowned applied mathematician. Research in stochastic control, mathematical finance, and dynamic programming."
+  },
+  {
+    "id": "hyndman_kyle",
+    "name": "Kyle Hyndman",
+    "title": "Professor",
+    "dept": "FIN",
+    "school": "JSOM",
+    "email": "tdp062000@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/tdp062000",
+    "rmp_url": null,
+    "research_areas": [
+      "Finance",
+      "Quantitative Finance"
+    ],
+    "teaches": [
+      "FIN6362",
+      "FIN6307"
+    ],
+    "bio": "Research in quantitative risk management, insurance, and applied probability in financial markets."
+  },
+  {
+    "id": "copat_rafael",
+    "name": "Rafael Copat",
+    "title": "Professor of Instruction",
+    "dept": "FIN",
+    "school": "JSOM",
+    "email": "Rafael.Copat@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/rcopat",
+    "rmp_url": null,
+    "research_areas": [
+      "Finance",
+      "FinTech"
+    ],
+    "teaches": [
+      "FIN6352",
+      "FIN6353",
+      "FIN6392"
+    ],
+    "bio": "Expertise in financial modeling, valuation, and financial technology. Teaches practical financial modeling using Excel and Python."
+  },
+  {
+    "id": "chen_jianqing",
+    "name": "Jianqing Chen",
+    "title": "Professor",
+    "dept": "BUAN",
+    "school": "JSOM",
+    "email": "jxc111031@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/jxc111031",
+    "rmp_url": null,
+    "research_areas": [
+      "Business Analytics",
+      "Digital Strategy"
+    ],
+    "teaches": [
+      "BUAN6335",
+      "BUAN6324",
+      "BUAN6337"
+    ],
+    "bio": "Research in platform economics, digital markets, AI strategy, and the economics of information systems."
+  },
+  {
+    "id": "honhon_dorothee",
+    "name": "Dorothée Honhon",
+    "title": "Professor",
+    "dept": "BUAN",
+    "school": "JSOM",
+    "email": "dbh130130@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/dbh130130",
+    "rmp_url": null,
+    "research_areas": [
+      "Business Analytics"
+    ],
+    "teaches": [
+      "BUAN6398",
+      "BUAN6359"
+    ],
+    "bio": "Research in operations management, supply chain analytics, and prescriptive analytics for retail and logistics."
+  },
+  {
+    "id": "hu_bin",
+    "name": "Bin Hu",
+    "title": "Professor",
+    "dept": "BUAN",
+    "school": "JSOM",
+    "email": "bxh180009@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/bxh180009",
+    "rmp_url": null,
+    "research_areas": [
+      "Business Analytics",
+      "Finance"
+    ],
+    "teaches": [
+      "BUAN6312",
+      "BUAN6359",
+      "FIN6318"
+    ],
+    "bio": "Research in econometrics, time series analysis, and statistical methods for finance and business analytics."
+  },
+  {
+    "id": "katok_elena",
+    "name": "Elena Katok",
+    "title": "Professor",
+    "dept": "BUAN",
+    "school": "JSOM",
+    "email": "emk120030@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/emk120030",
+    "rmp_url": null,
+    "research_areas": [
+      "Business Analytics"
+    ],
+    "teaches": [
+      "BUAN6392",
+      "BUAN6335"
+    ],
+    "bio": "Research in behavioral operations, experimental economics, and causal analytics. Expert in A/B testing and experimental design for business."
+  },
+  {
+    "id": "kuksov_dmitri",
+    "name": "Dmitri Kuksov",
+    "title": "Professor",
+    "dept": "BUAN",
+    "school": "JSOM",
+    "email": "dgk120030@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/dgk120030",
+    "rmp_url": null,
+    "research_areas": [
+      "Business Analytics"
+    ],
+    "teaches": [
+      "BUAN6337",
+      "BUAN6333"
+    ],
+    "bio": "Research in marketing analytics, consumer behavior modeling, and predictive analytics for pricing and product strategy."
+  },
+  {
+    "id": "lee_seunghyun",
+    "name": "Seung-Hyun Lee",
+    "title": "Professor",
+    "dept": "BUAN",
+    "school": "JSOM",
+    "email": "sxl029100@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/sxl029100",
+    "rmp_url": null,
+    "research_areas": [
+      "Business Analytics",
+      "Corporate Finance"
+    ],
+    "teaches": [
+      "BUAN6384",
+      "BUAN6378"
+    ],
+    "bio": "Research in corporate governance, sustainability analytics, ESG investing, and corporate innovation."
+  },
+  {
+    "id": "jacob_sanjay",
+    "name": "Sanjay Jain",
+    "title": "Professor",
+    "dept": "BUAN",
+    "school": "JSOM",
+    "email": "Sanjay.Jain@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/sxj164830",
+    "rmp_url": null,
+    "research_areas": [
+      "Business Analytics",
+      "Business Intelligence"
+    ],
+    "teaches": [
+      "BUAN6320",
+      "BUAN6346",
+      "BUAN6347"
+    ],
+    "bio": "Research in big data systems, Hadoop/Spark architectures, and database foundations for analytics."
+  },
+  {
+    "id": "dover_howard",
+    "name": "Howard Dover",
+    "title": "Clinical Professor",
+    "dept": "BUAN",
+    "school": "JSOM",
+    "email": "Howard.Dover@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/hdover",
+    "rmp_url": null,
+    "research_areas": [
+      "Digital Strategy",
+      "Business Analytics"
+    ],
+    "teaches": [
+      "MIS6373",
+      "MIS6378",
+      "MIS6380"
+    ],
+    "bio": "Expertise in social media strategy, CRM with Salesforce, and digital marketing analytics."
+  },
+  {
+    "id": "hasworth_julie",
+    "name": "Julie Haworth",
+    "title": "Professor of Instruction",
+    "dept": "BUAN",
+    "school": "JSOM",
+    "email": "Julie.Haworth@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/jhaworth",
+    "rmp_url": null,
+    "research_areas": [
+      "Business Analytics"
+    ],
+    "teaches": [
+      "BUAN6333",
+      "BUAN6356",
+      "BUAN6357"
+    ],
+    "bio": "Teaching-focused faculty. Courses in R and Python for business analytics. Known for hands-on data science instruction."
+  },
+  {
+    "id": "blueshtein_moran",
+    "name": "Moran Blueshtein",
+    "title": "Associate Professor of Instruction",
+    "dept": "BUAN",
+    "school": "JSOM",
+    "email": "Moran.Blueshtein@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/mblueshtein",
+    "rmp_url": null,
+    "research_areas": [
+      "Business Analytics",
+      "Business Intelligence"
+    ],
+    "teaches": [
+      "BUAN6324",
+      "BUAN6383",
+      "MIS6386"
+    ],
+    "bio": "Expertise in SAS analytics, modeling for business analytics, and applied machine learning for business applications."
+  },
+  {
+    "id": "bortz_tiffany",
+    "name": "Tiffany A. Bortz",
+    "title": "Professor of Instruction",
+    "dept": "BUAN",
+    "school": "JSOM",
+    "email": "Tiffany.Bortz@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/tbortz",
+    "rmp_url": null,
+    "research_areas": [
+      "Business Intelligence",
+      "Business Analytics"
+    ],
+    "teaches": [
+      "MIS6309",
+      "BUAN6386",
+      "MIS6345"
+    ],
+    "bio": "Expertise in SAP Analytics Cloud, business intelligence tools, and data warehousing. SAP-certified instructor."
+  },
+  {
+    "id": "biswas_swati",
+    "name": "Swati Biswas",
+    "title": "Professor",
+    "dept": "STAT",
+    "school": "NSM",
+    "email": "sxb125731@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/sxb125731",
+    "rmp_url": null,
+    "research_areas": [
+      "Statistics",
+      "Bioinformatics"
+    ],
+    "teaches": [
+      "STAT6331",
+      "STAT6337",
+      "STAT7330"
+    ],
+    "bio": "Research in statistical genetics, Bayesian methods for genomic data analysis, and methods for genetic association studies."
+  },
+  {
+    "id": "choudhary_pankaj",
+    "name": "Pankaj Choudhary",
+    "title": "Professor",
+    "dept": "STAT",
+    "school": "NSM",
+    "email": "pkc022000@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/pkc022000",
+    "rmp_url": null,
+    "research_areas": [
+      "Statistics"
+    ],
+    "teaches": [
+      "STAT6337",
+      "STAT6338",
+      "STAT6343"
+    ],
+    "bio": "Research in measurement error models, tolerance intervals, agreement analysis, and statistical methods for assessing agreement between measurement methods."
+  },
+  {
+    "id": "efromovich_sam",
+    "name": "Sam Efromovich",
+    "title": "Professor, Endowed Chair in Mathematical Sciences",
+    "dept": "STAT",
+    "school": "NSM",
+    "email": "sxe062000@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/sxe062000",
+    "rmp_url": null,
+    "research_areas": [
+      "Statistics"
+    ],
+    "teaches": [
+      "STAT6332",
+      "STAT6332",
+      "STAT6331"
+    ],
+    "bio": "World-recognized expert in nonparametric and adaptive estimation. Research in nonparametric curve estimation, adaptive methods, sequential analysis, and survival analysis."
+  },
+  {
+    "id": "gel_yulia",
+    "name": "Yulia Gel",
+    "title": "Professor",
+    "dept": "STAT",
+    "school": "NSM",
+    "email": "yxg142030@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/yxg142030",
+    "rmp_url": null,
+    "research_areas": [
+      "Statistics",
+      "Data Science"
+    ],
+    "teaches": [
+      "STAT6347",
+      "STAT7338",
+      "STAT6348"
+    ],
+    "bio": "Research in topological data analysis, network science, climate and environmental statistics, and machine learning for complex dependent data."
+  },
+  {
+    "id": "chen_min",
+    "name": "Min Chen",
+    "title": "Professor",
+    "dept": "STAT",
+    "school": "NSM",
+    "email": "mxc136030@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/mxc136030",
+    "rmp_url": null,
+    "research_areas": [
+      "Statistics",
+      "Bioinformatics"
+    ],
+    "teaches": [
+      "STAT6344",
+      "STAT5351",
+      "STAT6329"
+    ],
+    "bio": "Research in probability theory, stochastic processes, extreme value theory, and high-dimensional data analysis with applications in bioinformatics."
+  },
+  {
+    "id": "minkoff_susan",
+    "name": "Susan Minkoff",
+    "title": "Professor",
+    "dept": "STAT",
+    "school": "NSM",
+    "email": "sem120030@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/sem120030",
+    "rmp_url": null,
+    "research_areas": [
+      "Statistics",
+      "Data Science"
+    ],
+    "teaches": [
+      "STAT6341",
+      "STAT6340",
+      "STAT5352"
+    ],
+    "bio": "Research in numerical analysis, computational statistics, wave simulation, and scientific computing for data science applications."
+  },
+  {
+    "id": "cao_yan",
+    "name": "Yan Cao",
+    "title": "Associate Professor",
+    "dept": "STAT",
+    "school": "NSM",
+    "email": "yxc069200@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/yxc069200",
+    "rmp_url": null,
+    "research_areas": [
+      "Statistics"
+    ],
+    "teaches": [
+      "STAT5353",
+      "STAT6313",
+      "STAT6342"
+    ],
+    "bio": "Research in statistical machine learning, deep learning, and nonparametric Bayesian methods. Focus on uncertainty quantification and statistical theory for modern ML algorithms."
+  },
+  {
+    "id": "hong_liang",
+    "name": "Liang Hong",
+    "title": "Associate Professor",
+    "dept": "STAT",
+    "school": "NSM",
+    "email": "lxh019000@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/lxh019000",
+    "rmp_url": null,
+    "research_areas": [
+      "Statistics"
+    ],
+    "teaches": [
+      "STAT6329",
+      "STAT6326",
+      "STAT6344"
+    ],
+    "bio": "Research in actuarial science, credibility theory, dependent loss models, and risk measures. Expertise in applied probability and stochastic processes for insurance applications."
+  },
+  {
+    "id": "tran_anh",
+    "name": "Anh Tran",
+    "title": "Associate Professor",
+    "dept": "STAT",
+    "school": "NSM",
+    "email": "att140830@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/att140830",
+    "rmp_url": null,
+    "research_areas": [
+      "Statistics",
+      "Data Science"
+    ],
+    "teaches": [
+      "STAT6338",
+      "STAT7331",
+      "STAT6337"
+    ],
+    "bio": "Research in high-dimensional statistics, functional data analysis, and semi-parametric regression. Applications in genomics and biomedical data."
+  },
+  {
+    "id": "zweck_john",
+    "name": "John Zweck",
+    "title": "Professor",
+    "dept": "STAT",
+    "school": "NSM",
+    "email": "jwz120030@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/jwz120030",
+    "rmp_url": null,
+    "research_areas": [
+      "Statistics",
+      "Data Science"
+    ],
+    "teaches": [
+      "STAT6340",
+      "STAT6341",
+      "STAT5351"
+    ],
+    "bio": "Research in applied mathematics, computational methods for statistics, Bayesian inference, and data science applications in engineering and science."
+  },
+  {
+    "id": "zhang_li",
+    "name": "Li Zhang",
+    "title": "Professor",
+    "dept": "BIOL",
+    "school": "NSM",
+    "email": "lxz075000@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/lxz075000",
+    "rmp_url": null,
+    "research_areas": [
+      "Bioinformatics",
+      "Biology"
+    ],
+    "teaches": [
+      "BIOL6385",
+      "BIOL5376",
+      "BIOL5460"
+    ],
+    "bio": "Research in computational biology, systems biology, and bioinformatics. Expert in machine learning methods for genomics and proteomics data, transcriptome analysis, and regulatory network modeling."
+  },
+  {
+    "id": "zhang_mqz",
+    "name": "Michael Qiwei Zhang",
+    "title": "Professor, Cecil H. Green Chair",
+    "dept": "BIOL",
+    "school": "NSM",
+    "email": "mqz091000@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/mqz091000",
+    "rmp_url": null,
+    "research_areas": [
+      "Bioinformatics",
+      "Biology"
+    ],
+    "teaches": [
+      "BIOL6385",
+      "BIOL5381",
+      "BIOL6337"
+    ],
+    "bio": "Pioneer in computational genomics and bioinformatics. Research in gene regulation, epigenomics, and computational tools for high-throughput sequencing data analysis."
+  },
+  {
+    "id": "morcos_faruck",
+    "name": "Faruck Morcos",
+    "title": "Associate Professor",
+    "dept": "BIOL",
+    "school": "NSM",
+    "email": "afg150230@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/afg150230",
+    "rmp_url": null,
+    "research_areas": [
+      "Bioinformatics",
+      "Biology"
+    ],
+    "teaches": [
+      "BIOL5385",
+      "BIOL6385",
+      "BIOL5460"
+    ],
+    "bio": "Research in computational biology, protein evolution, and systems biology. Develops statistical physics methods for inferring protein structure and function from sequence data."
+  },
+  {
+    "id": "xuan_zhenyu",
+    "name": "Zhenyu Xuan",
+    "title": "Associate Professor",
+    "dept": "BIOL",
+    "school": "NSM",
+    "email": "zxx091000@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/zxx091000",
+    "rmp_url": null,
+    "research_areas": [
+      "Bioinformatics",
+      "Biology"
+    ],
+    "teaches": [
+      "BIOL5381",
+      "BIOL6315",
+      "BIOL5420"
+    ],
+    "bio": "Research in computational genomics, epigenomics, and gene regulation. Expert in ChIP-seq, ATAC-seq, and multi-omics data integration."
+  },
+  {
+    "id": "reitzer_lawrence",
+    "name": "Lawrence J. Reitzer",
+    "title": "Professor",
+    "dept": "BIOL",
+    "school": "NSM",
+    "email": "reitzer@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/reitzer",
+    "rmp_url": null,
+    "research_areas": [
+      "Biology"
+    ],
+    "teaches": [
+      "BIOL5370",
+      "BIOL6331",
+      "BIOL5420"
+    ],
+    "bio": "Research in microbial physiology, nitrogen metabolism in bacteria, and the molecular mechanisms of pathogen survival in host environments."
+  },
+  {
+    "id": "spiro_stephen",
+    "name": "Stephen Spiro",
+    "title": "Professor",
+    "dept": "BIOL",
+    "school": "NSM",
+    "email": "sxs067400@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/sxs067400",
+    "rmp_url": null,
+    "research_areas": [
+      "Biology"
+    ],
+    "teaches": [
+      "BIOL6331",
+      "BIOL5420",
+      "BIOL6337"
+    ],
+    "bio": "Research in microbial molecular biology, gene regulation in response to nitric oxide and oxygen, and stress responses in bacteria."
+  },
+  {
+    "id": "palmer_kelli",
+    "name": "Kelli Palmer",
+    "title": "Associate Professor",
+    "dept": "BIOL",
+    "school": "NSM",
+    "email": "klp120030@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/klp120030",
+    "rmp_url": null,
+    "research_areas": [
+      "Biology"
+    ],
+    "teaches": [
+      "BIOL5370",
+      "BIOL6351",
+      "BIOL6331"
+    ],
+    "bio": "Research in antimicrobial resistance, biofilm formation, and the molecular mechanisms of pathogenic bacteria including Enterococcus."
+  },
+  {
+    "id": "denisco_nicole",
+    "name": "Nicole De Nisco",
+    "title": "Assistant Professor",
+    "dept": "BIOL",
+    "school": "NSM",
+    "email": "njd160330@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/njd160330",
+    "rmp_url": null,
+    "research_areas": [
+      "Biology"
+    ],
+    "teaches": [
+      "BIOL5312",
+      "BIOL5370",
+      "BIOL6351"
+    ],
+    "bio": "Research in urinary tract infections, host-pathogen interactions, and microbial mechanisms of persistent infection."
+  },
+  {
+    "id": "kim_tae",
+    "name": "Tae Hoon Kim",
+    "title": "Associate Professor",
+    "dept": "BIOL",
+    "school": "NSM",
+    "email": "txk142630@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/txk142630",
+    "rmp_url": null,
+    "research_areas": [
+      "Bioinformatics",
+      "Biology"
+    ],
+    "teaches": [
+      "BIOL6315",
+      "BIOL5381",
+      "BIOL6337"
+    ],
+    "bio": "Research in 3D genome organization, chromatin architecture, and epigenomic regulation using Hi-C and other chromosome conformation capture methods."
+  },
+  {
+    "id": "sapkota_darshan",
+    "name": "Darshan Sapkota",
+    "title": "Assistant Professor",
+    "dept": "BIOL",
+    "school": "NSM",
+    "email": "dxs210043@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/dxs210043",
+    "rmp_url": null,
+    "research_areas": [
+      "Biology"
+    ],
+    "teaches": [
+      "BIOL6341",
+      "BIOL5440",
+      "BIOL5460"
+    ],
+    "bio": "Research in stem cell biology, brain development, and the molecular mechanisms underlying neurodevelopmental disorders."
+  },
+  {
+    "id": "gonzalez_juan",
+    "name": "Juan E. González",
+    "title": "Professor",
+    "dept": "BIOL",
+    "school": "NSM",
+    "email": "jgonzal@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/jgonzal",
+    "rmp_url": null,
+    "research_areas": [
+      "Bioinformatics",
+      "Biology"
+    ],
+    "teaches": [
+      "BIOL5385",
+      "BIOL6385",
+      "BIOL5460"
+    ],
+    "bio": "Research in computational evolution, phylogenomics, and bioinformatics tools for population genetics. Director of the Bioinformatics and Computational Biology MS program."
+  },
+  {
+    "id": "griffith_daniel",
+    "name": "Daniel A. Griffith",
+    "title": "Regents Professor, Ashbel Smith Professor",
+    "dept": "GISC",
+    "school": "EPPS",
+    "email": "dag054000@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/dag054000",
+    "rmp_url": null,
+    "research_areas": [
+      "Geospatial Science"
+    ],
+    "teaches": [
+      "GISC6301",
+      "GISC6311"
+    ],
+    "bio": "World-renowned spatial statistician. Research in spatial autocorrelation, spatial filtering, and computational spatial statistics."
+  },
+  {
+    "id": "chun_yongwan",
+    "name": "Yongwan Chun",
+    "title": "Professor",
+    "dept": "GISC",
+    "school": "EPPS",
+    "email": "yxc070300@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/yxc070300",
+    "rmp_url": null,
+    "research_areas": [
+      "Geospatial Science"
+    ],
+    "teaches": [
+      "GISC6301",
+      "GISC6321",
+      "GISC6334"
+    ],
+    "bio": "Research in spatial statistics, spatial econometrics, geographic information science, and public health geography."
+  },
+  {
+    "id": "dean_denis",
+    "name": "Denis J. Dean",
+    "title": "Professor",
+    "dept": "GISC",
+    "school": "EPPS",
+    "email": "djd081000@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/djd081000",
+    "rmp_url": null,
+    "research_areas": [
+      "Geospatial Science"
+    ],
+    "teaches": [
+      "GISC6325",
+      "GISC6321",
+      "GISC6317"
+    ],
+    "bio": "Research in remote sensing, geospatial intelligence, wildlife ecology, and applications of machine learning to satellite imagery."
+  },
+  {
+    "id": "kim_dohyeong",
+    "name": "Dohyeong Kim",
+    "title": "Professor",
+    "dept": "GISC",
+    "school": "EPPS",
+    "email": "dxk132530@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/dxk132530",
+    "rmp_url": null,
+    "research_areas": [
+      "Geospatial Science",
+      "Economics"
+    ],
+    "teaches": [
+      "GISC6323",
+      "GISC6334",
+      "GISC6317"
+    ],
+    "bio": "Research in environmental health, GIS and public health, spatial epidemiology, and machine learning for socioeconomic data."
+  },
+  {
+    "id": "brandt_patrick",
+    "name": "Patrick T. Brandt",
+    "title": "Professor",
+    "dept": "EPPS",
+    "school": "EPPS",
+    "email": "pxb054000@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/pxb054000",
+    "rmp_url": null,
+    "research_areas": [
+      "Economics",
+      "Geospatial Science"
+    ],
+    "teaches": [
+      "GISC6317",
+      "ECON6309",
+      "GISC6323"
+    ],
+    "bio": "Research in political economy, Bayesian time series models, quantitative text analysis, and conflict forecasting."
+  },
+  {
+    "id": "beron_kurt",
+    "name": "Kurt J. Beron",
+    "title": "Associate Professor",
+    "dept": "EPPS",
+    "school": "EPPS",
+    "email": "kberon@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/kberon",
+    "rmp_url": null,
+    "research_areas": [
+      "Economics"
+    ],
+    "teaches": [
+      "ECON6309",
+      "ECON6316",
+      "GISC6311"
+    ],
+    "bio": "Research in spatial econometrics, environmental economics, and the economics of air quality policy."
+  },
+  {
+    "id": "kim_dohyeong_econ",
+    "name": "Dohyeong Kim (EPPS/Econ)",
+    "title": "Professor",
+    "dept": "ECON",
+    "school": "EPPS",
+    "email": "dxk132530@utdallas.edu",
+    "profile_url": "https://profiles.utdallas.edu/dxk132530",
+    "rmp_url": null,
+    "research_areas": [
+      "Economics"
+    ],
+    "teaches": [
+      "ECON5303",
+      "ECON5321"
+    ],
+    "bio": "Also contributes to Economics MS program with courses in forecasting and microeconomic theory for applications."
+  }
+]
