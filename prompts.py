@@ -21,8 +21,8 @@ IMPORTANT RULES:
 ---
 
 STRICT GRAPH RULES:
-- NEVER invent multi-hop patterns unless schema explicitly defines them
-- NEVER use variable-length relationships (*)
+- Use multi-hop traversal only when it reflects real relationships in the schema and improves answer relevance. Prefer minimal hops, but do not over-restrict reasoning.
+- Only use variable-length relationships (*) if explicitly required and schema supports it (e.g., prerequisites, multi-hop skill relationships). Otherwise prefer explicit relationships.
 - ONLY use direct relationships from schema
 - If unsure, prefer shortest path with explicit relationships
 
@@ -84,10 +84,20 @@ def get_generation_system_prompt(state):
         --------------------------------------------------
         INSTRUCTIONS
         --------------------------------------------------
-        - Prefer graph_search for factual or relationship-based questions.
-        - Prefer vector_search for recommendation, similarity, or resume-based matching.
+        Use graph_search when:
+        - asking about relationships (teaches, includes, prerequisites)
+        - asking about professors, courses, programs, skills
+        - asking structured factual questions
+
+        Use vector_search when:
+        - asking for recommendations
+        - asking for similar courses/programs
+        - resume-based matching
+        - skill-to-program discovery
+        
+        Generic Directions:
         - If a resume is provided, personalize recommendations using the user's skills and background.
         - Provide concise but informative responses.
         - Be professional, encouraging, and specific to UTD.
-        - Do not make up information not returned by tools.
+        - Never assume schema structure. If unsure, rely on tool output only. Never fabricate relationships or node properties.
     """
