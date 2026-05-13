@@ -1,7 +1,6 @@
-import os
+# Importing Libraries
 import streamlit as st
-from dotenv import load_dotenv
-from llm import llm
+from llm import get_llm
 from utils import get_session_id
 from prompts import get_generation_system_prompt
 from tools import vector_search, graph_search
@@ -10,8 +9,6 @@ from langchain_core.prompts import PromptTemplate
 from langchain_neo4j import Neo4jChatMessageHistory
 from langchain_core.runnables.history import RunnableWithMessageHistory
 
-load_dotenv()
-
 
 # -----------------------------
 # Memory
@@ -19,10 +16,10 @@ load_dotenv()
 def get_memory(session_id):
     return Neo4jChatMessageHistory(
         session_id=session_id,
-        url=os.getenv("LOG_NEO4J_URI"),
-        username=os.getenv("LOG_NEO4J_USERNAME"),
-        password=os.getenv("LOG_NEO4J_PASSWORD"),
-        database=os.getenv("LOG_NEO4J_DATABASE")
+        url=st.session_state.LOG_NEO4J_URI,
+        username=st.session_state.LOG_NEO4J_USERNAME,
+        password=st.session_state.LOG_NEO4J_PASSWORD,
+        database=st.session_state.LOG_NEO4J_DATABASE
     )
 
 
@@ -73,34 +70,45 @@ New input: {input}
 
 
 # -----------------------------
-# Agent
+# Create Chat Agent
 # -----------------------------
-agent = create_react_agent(
-    llm=llm,
-    tools=tools,
-    prompt=agent_prompt
-)
+def build_chat_agent():
 
-agent_executor = AgentExecutor(
-    agent=agent,
-    tools=tools,
-    verbose=True,
-    handle_parsing_errors=True,
-    max_iterations=10
-)
+    llm_model = get_llm(
+        st.session_state.get("model_name"),
+        st.session_state.get("MODEL_API_KEY")
+    )
 
-chat_agent = RunnableWithMessageHistory(
-    agent_executor,
-    get_memory,
-    input_messages_key="input",
-    history_messages_key="chat_history",
-)
+    agent = create_react_agent(
+        llm=llm_model,
+        tools=tools,
+        prompt=agent_prompt
+    )
+
+    agent_executor = AgentExecutor(
+        agent=agent,
+        tools=tools,
+        verbose=True,
+        handle_parsing_errors=True,
+        max_iterations=10
+    )
+
+    chat_agent = RunnableWithMessageHistory(
+        agent_executor,
+        get_memory,
+        input_messages_key="input",
+        history_messages_key="chat_history",
+    )
+
+    return chat_agent
 
 
 # -----------------------------
 # Generation Function
 # -----------------------------
 def generate_response(user_input):
+    chat_agent = build_chat_agent()
+
     system_prompt = get_generation_system_prompt({
         "resume_context": st.session_state.get(
             "resume_data"
