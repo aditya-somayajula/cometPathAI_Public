@@ -1,4 +1,5 @@
 # Importing Libraries
+import os
 import tempfile
 import streamlit as st
 from agent import generate_response
@@ -16,8 +17,7 @@ st.set_page_config("CometPathAI", page_icon=":mortar_board:", layout="wide")
 required_keys = [
     "MAIN_NEO4J_URI", "MAIN_NEO4J_USERNAME", "MAIN_NEO4J_PASSWORD", "MAIN_NEO4J_DATABASE",
     "LOG_NEO4J_URI", "LOG_NEO4J_USERNAME", "LOG_NEO4J_PASSWORD", "LOG_NEO4J_DATABASE",
-    "COLLECTION_NAME", "CHROMA_TENANT", "CHROMA_API_KEY", "CHROMA_DB",
-    "HF_TOKEN", "LANGSMITH_API_KEY", "MODEL_API_KEY"
+    "COLLECTION_NAME", "CHROMA_TENANT", "CHROMA_API_KEY", "CHROMA_DB", "MODEL_API_KEY"
 ]
 
 WELCOME_MESSAGE = (
@@ -310,9 +310,7 @@ def render_sidebar():
         col4, col5, col6 = st.columns([5, 5, 5], vertical_alignment="center")
         with col5:
             with st.popover(label="API Details", help="API Details"):
-                st.session_state.HF_TOKEN = st.text_input("Hugging Face Token", type="password", value=st.session_state.get("HF_TOKEN", ""))
-                st.session_state.LANGSMITH_API_KEY = st.text_input("Langsmith API", type="password", value=st.session_state.get("LANGSMITH_API_KEY",""))
-                st.session_state.MODEL_API_KEY = st.text_input("Model API", type="password", value=st.session_state.get("MODEL_API_KEY",""))
+               st.session_state.MODEL_API_KEY = st.text_input("Model API", type="password", value=st.session_state.get("MODEL_API_KEY",""))
 
         st.divider()
 
