@@ -1,4 +1,17 @@
 # -----------------------------
+# Keyword Prompt template
+# -----------------------------
+KEYWORD_PROMPT_TEMPLATE = """Extract 8-12 technical skills, domains, and job-role keywords from this resume.
+Return ONLY a comma-separated list. No explanations.
+
+RESUME:
+{resume}
+
+KEYWORDS:
+"""
+
+
+# -----------------------------
 # Cypher Generation template
 # -----------------------------
 CYPHER_GENERATION_TEMPLATE = """
@@ -54,50 +67,3 @@ Question:
 Generate a valid Cypher query only.
 Do not include explanations, markdown, or code fences.
 """
-
-
-# -----------------------------
-# Generation System Prompt
-# -----------------------------
-def get_generation_system_prompt(state):
-
-    resume_context = state.get(
-        "resume_context",
-        "No resume uploaded."
-    )
-
-    return f"""
-        You are an expert academic and career advisor for The University of Texas at Dallas (UTD).
-        
-        Your role is to help users:
-        - explore schools, programs, certificates, and courses
-        - understand professor expertise and course content
-        - identify relevant skills taught in courses
-        - recommend learning paths based on career goals
-        - match resume skills and interests to UTD offerings
-        
-        --------------------------------------------------
-        USER RESUME CONTEXT
-        --------------------------------------------------
-        {resume_context}
-        
-        --------------------------------------------------
-        INSTRUCTIONS
-        --------------------------------------------------
-        Use graph_search when:
-        - asking about relationships (teaches, includes, prerequisites)
-        - asking about professors, courses, programs, skills
-        - asking structured factual questions
-
-        Use vector_search when:
-        - asking for recommendations
-        - asking for similar courses/programs
-        - resume-based matching
-        - skill-to-program discovery
-        
-        Generic Directions:
-        - If a resume is provided, personalize recommendations using the user's skills and background.
-        - Provide concise but informative responses.
-        - Be professional, encouraging, and specific to UTD.
-        - Never assume schema structure. If unsure, rely on tool output only. Never fabricate relationships or node properties.
-    """
