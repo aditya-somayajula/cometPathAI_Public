@@ -89,96 +89,90 @@ def graph_search(question: str):
 
 
 # -----------------------------
-# Hybrid Vector Search (Dense + Sparse) & Reranker
+# Hybrid Search Tool
 # -----------------------------
-def hybrid_vector_search(docs, filter_type):
+@tool
+def hybrid_search(query: str):
+    """
+    Hybrid retrieval tool that combines:
+    1. Semantic vector search
+    2. Graph relationship search
+    3. Reranking
+
+    Use this for:
+    - Course recommendations
+    - Resume-based matching
+    - Skill-based exploration
+    - Program discovery
+    - Questions requiring both semantic understanding and graph relationships
+    """
+    vector_db = get_vector_main()
+    graph = get_graph_main()
+
+    llm_model = get_llm(
+        st.session_state.model_name,
+        st.session_state.model_api_key
+    )
+
+    # VECTOR SEARCH
+    vector_docs = vector_db.similarity_search(query, k=15)
+    vector_results = []
+    for d in vector_docs:
+        vector_results.append({
+            "source": "vector",
+            "content": d.page_content,
+            "metadata": d.metadata
+        })
+
+    # GRAPH SEARCH
+    cypher_prompt = PromptTemplate.from_template(CYPHER_GENERATION_TEMPLATE)
+    cypher_qa = GraphCypherQAChain.from_llm(
+        llm_model,
+        graph=graph,
+        verbose=False,
+        cypher_prompt=cypher_prompt,
+        top_k=10,
+        validate_cypher=True,
+        allow_dangerous_requests=True,
+        return_direct=False
+    )
+    graph_response = cypher_qa.invoke({"query": query})
+    graph_result = graph_response.get("result", "")
+    graph_results = []
+    if graph_result:
+        graph_results.append({
+            "source": "graph",
+            "content": str(graph_result)
+        })
+
+    # COMBINE RESULTS
+    combined_results = vector_results + graph_results
+    if not combined_results:
+        return "No relevant results found."
+
+    # BM25 RERANKING
+    documents = [r["content"] for r in combined_results]
+    tokenized_docs = [doc.lower().split() for doc in documents ]
+    bm25 = BM25Okapi(tokenized_docs)
+    tokenized_query = query.lower().split()
+    bm25_scores = bm25.get_scores(tokenized_query)
+
+    # CROSS-ENCODER RERANK
+    rerank_pairs = [[query, doc]for doc in documents]
     try:
-        if type(docs) != list:
-            docs = [docs]
+        rerank_scores = reranker.predict(rerank_pairs)
+        final_scores = (0.7 * np.array(rerank_scores)+ 0.3 * np.array(bm25_scores))
+    except Exception:
+        final_scores = bm25_scores
 
-        print(filter_type)
-
-        vector_store = get_vector_main()
-
-        # Fetch Relevant Vector DB Records
-        all_data = vector_store.similarity_search(query="", k=300, filter={"type": filter_type})
-        all_documents = all_data["documents"]
-        all_ids = all_data["ids"]
-        all_metadata = all_data["metadatas"]
-        print("Fetched all dta from vector store")
-
-        # BM25 Tokenizer
-        tokenized_docs = [
-            doc.lower().split()
-            for doc in all_documents
-        ]
-        bm25 = BM25Okapi(tokenized_docs)
-        print("Tokenizer")
-
-        all_candidates = []
-        for doc in docs:
-            # Vector Search
-            vector_results = vector_store.similarity_search_with_score(query=doc, k=50, filter={"type": filter_type})
-
-            for result_doc, score in vector_results:
-                candidate = {
-                    "id": result_doc.metadata.get("id"),
-                    "text": result_doc.page_content,
-                    "metadata": result_doc.metadata,
-                    "distance": score
-                }
-                all_candidates.append(candidate)
-
-            # BM25 retrival
-            tokenized_query = doc.lower().split()
-            bm25_scores = bm25.get_scores(tokenized_query)
-            top_indices = np.argsort(bm25_scores)[::-1][:5]
-            for idx in top_indices:
-                candidate = {
-                    "id": all_ids[idx],
-                    "text": all_documents[idx],
-                    "metadata": all_metadata[idx],
-                    "bm25_score": bm25_scores[idx]
-                }
-                all_candidates.append(candidate)
-        print("Got all candidates")
-
-        unique_candidates = {}
-        for candidate in all_candidates:
-            unique_candidates[candidate["id"]] = candidate
-        candidate_docs = list(unique_candidates.values())
-        print("Got unique candidates")
-
-        combined_query = " ".join(docs)
-        pairs = [
-            (combined_query, doc["text"])
-            for doc in candidate_docs
-        ]
-        print("Combined Query")
-
-        # Re-rank
-        scores = reranker.predict(pairs)
-        reranked_results = sorted(
-            zip(candidate_docs, scores),
-            key=lambda x: x[1],
-            reverse=True
-        )
-        print("Rerannked")
-
-        TOP_K = 10
-        results_str = ""
-        for rank, (doc, score) in enumerate(
-                reranked_results[:TOP_K],
-                start=1
-        ):
-            results_str += f"Rank #{rank} \n"
-            results_str += f"Rerank Score: {score:.4f}\n"
-            results_str += f"Content #{doc.get('text')} \n"
-            results_str += f"Metadata #{doc.get('metadata')} \n"
-            results_str += "\n\n ----- ----- ----- \n\n"
-        print("Finished")
-
-        return results_str
-    except Exception as e:
-        print(e)
-        return "Unable to get results from vector database."
+    # SORT RESULTS
+    ranked_indices = np.argsort(final_scores)[::-1]
+    final_results = []
+    for idx in ranked_indices[:10]:
+        final_results.append({
+            "score": float(final_scores[idx]),
+            "source": combined_results[idx]["source"],
+            "content": combined_results[idx]["content"],
+            "metadata": combined_results[idx].get("metadata", {})
+        })
+    return json.dumps(final_results, indent=2)
