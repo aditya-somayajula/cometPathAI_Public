@@ -3,6 +3,7 @@ import os
 import streamlit as st
 from streamlit.runtime.scriptrunner_utils.script_run_context import get_script_run_ctx
 from langchain_community.document_loaders import PyPDFLoader
+from helper import chunk_resume
 
 
 # -----------------------------
@@ -33,7 +34,9 @@ def get_resume(file_path):
         loader = PyPDFLoader(file_path)
         pages = loader.load()
         full_text = "\n\n---- PAGE ENDING -----\n\n".join([p.page_content for p in pages])
+
         st.session_state.resume_data = full_text
+        st.session_state.resume_chunks = chunk_resume(full_text)
         st.session_state.resume_upload = True
         os.remove(file_path)
     except Exception as e:
