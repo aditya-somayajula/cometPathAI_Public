@@ -282,7 +282,9 @@ def render_sidebar():
         st.caption(f"Active model: {st.session_state.model_name}")
 
         with st.popover(label="API Details", help="API Details"):
-            st.session_state.model_api_key = st.text_input("Model API", type="password", value=st.session_state.get("model_api_key",""))
+            entered_key  = st.text_input("Model API", type="password", value=st.session_state.get("model_api_key",""))
+            if entered_key:
+                st.session_state.model_api_key = entered_key
 
         st.divider()
 
