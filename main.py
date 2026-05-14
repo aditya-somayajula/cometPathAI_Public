@@ -1,5 +1,4 @@
 # Importing Libraries
-import os
 import tempfile
 import streamlit as st
 from agent import generate_response
@@ -14,11 +13,6 @@ load_dotenv()
 # -----------------------------
 st.set_page_config("CometPathAI", page_icon=":mortar_board:", layout="wide")
 
-required_keys = [
-    "MAIN_NEO4J_URI", "MAIN_NEO4J_USERNAME", "MAIN_NEO4J_PASSWORD", "MAIN_NEO4J_DATABASE",
-    "LOG_NEO4J_URI", "LOG_NEO4J_USERNAME", "LOG_NEO4J_PASSWORD", "LOG_NEO4J_DATABASE",
-    "COLLECTION_NAME", "CHROMA_TENANT", "CHROMA_API_KEY", "CHROMA_DB", "MODEL_API_KEY"
-]
 
 WELCOME_MESSAGE = (
     "Hi there! Upload your resume, and I'll match your skills with graduate "
@@ -35,19 +29,18 @@ SUGGESTED_PROMPTS = [
 def initialize_session_state():
     defaults = {
         "resume_upload": False,
-        "resume_data": None,
+        "resume_data": "",
+        "additional_data": "",
         "uploader_key": 0,
         "model_name": DEFAULT_MODEL,
+        "model_api_key": "",
         "messages": [{"role": "assistant", "content": WELCOME_MESSAGE}]
     }
     for key, value in defaults.items():
         if key not in st.session_state:
             st.session_state[key] = value
-    for kys in required_keys:
-        st.session_state[kys] = ""
 
 initialize_session_state()
-
 
 # -----------------------------
 # Define Functions
@@ -225,7 +218,8 @@ def apply_theme():
 def reset_chat():
     st.session_state.uploader_key += 1
     st.session_state.resume_upload = False
-    st.session_state.resume_data = None
+    st.session_state.resume_data = ""
+    st.session_state.additional_data = ""
     st.session_state.messages = [{"role": "assistant", "content": WELCOME_MESSAGE}]
     st.rerun()
 
@@ -287,30 +281,8 @@ def render_sidebar():
         st.session_state.model_name = selected_model_label
         st.caption(f"Active model: {st.session_state.model_name}")
 
-        col1, col2, col3 = st.columns([2, 2, 2], vertical_alignment="center")
-        with col1:
-            with st.popover(label="Main Graph", help="Main Graph DB Details"):
-                st.session_state.MAIN_NEO4J_URI = st.text_input("URI (Main)", value=st.session_state.get("MAIN_NEO4J_URI", ""))
-                st.session_state.MAIN_NEO4J_USERNAME = st.text_input("Username (Main)", value=st.session_state.get("MAIN_NEO4J_USERNAME",""))
-                st.session_state.MAIN_NEO4J_PASSWORD = st.text_input("Password (Main)", type="password", value=st.session_state.get("MAIN_NEO4J_PASSWORD",""))
-                st.session_state.MAIN_NEO4J_DATABASE = st.text_input("Database (Main)", value=st.session_state.get("MAIN_NEO4J_DATABASE",""))
-        with col2:
-            with st.popover(label="Log Graph", help="Log Graph DB Details"):
-                st.session_state.LOG_NEO4J_URI = st.text_input("URI (Log)", value=st.session_state.get("LOG_NEO4J_URI", ""))
-                st.session_state.LOG_NEO4J_USERNAME = st.text_input("Username (Log)", value=st.session_state.get("LOG_NEO4J_USERNAME",""))
-                st.session_state.LOG_NEO4J_PASSWORD = st.text_input("Password (Log)", type="password", value=st.session_state.get("LOG_NEO4J_PASSWORD",""))
-                st.session_state.LOG_NEO4J_DATABASE = st.text_input("Database (Log)", value=st.session_state.get("LOG_NEO4J_DATABASE",""))
-        with col3:
-            with st.popover(label="Vector DB", help="Vector DB Details"):
-                st.session_state.COLLECTION_NAME = st.text_input("Collection Name",value=st.session_state.get("COLLECTION_NAME", ""))
-                st.session_state.CHROMA_TENANT = st.text_input("Tenant", value=st.session_state.get("CHROMA_TENANT", ""))
-                st.session_state.CHROMA_API_KEY = st.text_input("API Key", value=st.session_state.get("CHROMA_API_KEY",""))
-                st.session_state.CHROMA_DB = st.text_input("Database", value=st.session_state.get("CHROMA_DB",""))
-
-        col4, col5, col6 = st.columns([5, 5, 5], vertical_alignment="center")
-        with col5:
-            with st.popover(label="API Details", help="API Details"):
-               st.session_state.MODEL_API_KEY = st.text_input("Model API", type="password", value=st.session_state.get("MODEL_API_KEY",""))
+        with st.popover(label="API Details", help="API Details"):
+            st.session_state.model_api_key = st.text_input("Model API", type="password", value=st.session_state.get("model_api_key",""))
 
         st.divider()
 
@@ -369,15 +341,8 @@ def render_suggested_prompts():
 
 
 def handle_submit(user_message):
-    missing_keys = [
-        key for key in required_keys
-        if key not in st.session_state or str(st.session_state[key]).strip() == "" or st.session_state[key] == None
-    ]
-    if missing_keys:
-        st.error(
-            f"The following required configuration values are missing or empty:\n\n"
-            + "\n".join([f"- {key}" for key in missing_keys])
-        )
+    if "model_api_key" not in st.session_state or not str(st.session_state.model_api_key).strip():
+        st.error("Model API Key is required")
         st.stop()
     with st.spinner("Thinking..."):
         response = generate_response(user_message)
